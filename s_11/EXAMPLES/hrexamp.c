@@ -16,6 +16,16 @@
  * License, which you should have received with the source.
  *
  */
+
+ /*
+ 	struct timer_list{
+		struct list_head entry;
+		unsigned long expires;
+		void (*function) (unsigned long);
+		unsigned long data;
+		struct tvec_t_base_s *base;
+ 	}
+ */
 #include <linux/module.h>
 #include <linux/timer.h>
 #include <linux/init.h>
